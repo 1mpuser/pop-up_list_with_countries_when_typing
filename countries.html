@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>List of countries</title>
+    <style>
+        #countriesSearch{
+            display: block;
+            width: 200px;
+            margin: 5px;
+            padding: 5px;
+        }
+        #listOfCountries{
+            display: none;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 999999999999;
+            background: #fff;
+            max-height: 250px;
+            overflow: auto;
+            margin-top: 1px;
+        }
+        #listOfCountries div:hover{
+            cursor: pointer;
+            background: #eee;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="countriesSearch" autofocus placeholder="Введите страну">
+    <div id="listOfCountries" style="display: none;"></div>
+    <script src="code.js"></script>
+</body>
+</html>
